@@ -332,21 +332,16 @@ Please see our full [ROADMAP.md](./ROADMAP.md) for details on planned features.
 
 ## 🚦 Current Status
 
-**🟢 Phase 0: Foundation (Completed)**
+**🟡 Phase 1: Parser & AST (In Progress)**
 
 Setting up the project structure and development environment.
 
 **Completed:**
-- ✅ Project planning and documentation
-- ✅ Roadmap and architecture design
-- ✅ Implementation guide
-- ✅ README and project structure
+- ✅ Parser Integration
 
 **Next Steps:**
-- ✅ Cargo project initialization
-- ✅ Development tooling setup
-- ✅ Basic error types
-- ✅ CLI skeleton
+- ⏳ Symbol Table
+- ⏳ Type System Foundation
 
 **Timeline:** MVP targeted for completion in 2-3 weeks.
 

@@ -1,5 +1,7 @@
 use clap::{Parser, Subcommand};
 use std::path::PathBuf;
+use colored::*;
+use pyrust_check::parser::PythonParser;
 
 #[derive(Parser)]
 #[command(name = "pyrust-check")]
@@ -31,25 +33,45 @@ fn main() {
     let cli = Cli::parse();
 
     match cli.command {
-        Some(Commands::Check { path }) => {
-            println!("Checking: {}", path.display());
-            // TODO: Implement type checking (Phase 3)
-            println!("Type checking not yet implemented.");
-        }
         Some(Commands::Parse { path }) => {
-            println!("Parsing: {}", path.display());
-            // TODO: Implement parsing (Phase 1)
-            println!("Parser not yet implemented.");
+            parse_command(&path);
         }
+        // Explicitly handle the subcommand Check
+        Some(Commands::Check { path }) => {
+            check_command(&path);
+        }
+        // Handle the case where no subcommand is provided (default behavior)
         None => {
             if let Some(path) = cli.path {
-                println!("Checking: {}", path.display());
-                // TODO: Implement type checking (Phase 3)
-                println!("Type checking not yet implemented.");
+                check_command(&path);
             } else {
+                eprintln!("{}", "Error: Please provide a path to check".red());
                 use clap::CommandFactory;
                 let _ = Cli::command().print_help();
+                std::process::exit(1);
             }
         }
     }
+}
+
+fn parse_command(path: &PathBuf) {
+    println!("{} {}", "Parsing:".blue(), path.display());
+    
+    match PythonParser::parse_file(path) {
+        Ok(ast) => {
+            println!("{}", "✓ Parsed successfully".green());
+            println!("\nAST has {} statements", ast.len());
+            // In the future we can print the debug view of our simplified AST
+            println!("{:#?}", ast); 
+        }
+        Err(e) => {
+            eprintln!("{} {}", "✗ Parse error:".red(), e);
+            std::process::exit(1);
+        }
+    }
+}
+
+fn check_command(path: &PathBuf) {
+    println!("{} {}", "Checking:".blue(), path.display());
+    println!("{}", "Type checking not yet implemented".yellow());
 }
