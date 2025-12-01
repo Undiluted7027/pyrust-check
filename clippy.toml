@@ -1,1 +1,19 @@
 # Linter config
+# You can find all configurable options and their defaults in the Clippy documentation:
+# https://doc.rust-lang.org/clippy/lint_configuration.html
+
+
+
+# Configure the 'disallowed_names' lint
+disallowed-names = ["foo", "bar", "baz"]
+
+# Configure the 'avoid_breaking_exported_api' lint
+avoid-breaking-exported-api = false
+
+# Configure the 'allow-renamed-params-for' lint, appending to defaults
+allow-renamed-params-for = ["..", "my_crate::MyTrait"]
+
+# Configure the 'future_size_threshold' lint (defaults to 16 KiB)
+future-size-threshold = 8192
+
+warn-on-all-wildcard-imports = true

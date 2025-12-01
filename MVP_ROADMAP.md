@@ -74,30 +74,30 @@ Build a functional Python type checker that demonstrates:
   ├── tests/
   └── benches/
   ```
-- [ ] Configure `rustfmt.toml`
-- [ ] Configure `clippy.toml`
+- [x] Configure `rustfmt.toml`
+- [x] Configure `clippy.toml`
 
 #### Day 2: Dependencies & Core Types
-- [ ] **Add dependencies to `Cargo.toml`**
-  - `rustpython-parser` = "0.3" - Python AST parsing
-  - `clap` = { version = "4.5", features = ["derive"] } - CLI
-  - `anyhow` = "1.0" - Error handling
-  - `thiserror` = "1.0" - Custom errors
-  - `colored` = "2.1" - Terminal colors
-- [ ] **Add dev dependencies**
-  - `criterion` = "0.5" - Benchmarking
-  - `pretty_assertions` = "1.4" - Better test output
-- [ ] **Create basic error types** (`src/diagnostics/error.rs`)
+- [x] **Add dependencies to `Cargo.toml`**
+  - `rustpython-parser` - Python AST parsing
+  - `clap` - CLI
+  - `anyhow` - Error handling
+  - `thiserror` - Custom errors
+  - `colored` - Terminal colors
+- [x] **Add dev dependencies**
+  - `criterion` - Benchmarking
+  - `pretty_assertions` - Better test output
+- [x] **Create basic error types** (`src/diagnostics/error.rs`)
   - `ParseError`
   - `TypeError`
   - `DiagnosticError`
-- [ ] **Create `SourceSpan` type** (`src/utils/span.rs`)
+- [x] **Create `SourceSpan` type** (`src/utils/span.rs`)
   - Track file location (line, column, offset)
-- [ ] **Create basic CLI structure** (`src/main.rs`)
+- [x] **Create basic CLI structure** (`src/main.rs`)
   - `pyrust-check <file>` command
   - Version flag
   - Help text
-- [ ] **Verify setup**
+- [x] **Verify setup**
   - `cargo build` succeeds
   - `cargo test` runs (no tests yet)
   - `cargo clippy` passes
@@ -105,13 +105,13 @@ Build a functional Python type checker that demonstrates:
 ### Success Criteria
 ✅ Repository initialized with proper structure
 
-⏳ `cargo build` compiles successfully
+✅ `cargo build` compiles successfully
 
-⏳ `cargo test` runs without errors
+✅ `cargo test` runs without errors
 
-⏳ `cargo clippy` passes with no warnings
+✅ `cargo clippy` passes with no warnings
 
-⏳ Basic CLI prints help text
+✅ Basic CLI prints help text
 
 ### Deliverables
 - Initialized Cargo project

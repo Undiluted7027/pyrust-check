@@ -10,7 +10,7 @@ This document outlines pyrust-check's development roadmap from MVP through advan
 
 | Phase | Focus | Timeline | Status |
 |-------|-------|----------|--------|
-| **Phase 1: MVP** | Core type checking | Weeks 1-3 | 🏗️ 3% Complete |
+| **Phase 1: MVP** | Core type checking | Weeks 1-3 | 🏗️ 6% Complete |
 | **Phase 2: Classes & Inheritance** | OOP support | Weeks 4-7 | 📋 Planned |
 | **Phase 3: Advanced Types** | Generics, unions, protocols | Weeks 8-12 | 📋 Planned |
 | **Phase 4: The Differentiator** | Complex inheritance solution | Weeks 13-17 | 🔮 Future |
