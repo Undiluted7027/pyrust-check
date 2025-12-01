@@ -261,13 +261,13 @@ class JsonStore(FileStore):
 ### ✅ Phase 0: Foundation (Current - Week 1)
 - [x] Project structure and tooling
 - [x] Initial documentation
-- [ ] Cargo configuration
-- [ ] Development environment setup
-- [ ] Basic CLI skeleton
+- [x] Cargo configuration
+- [x] Development environment setup
+- [x] Basic CLI skeleton
 
 See [MVP_ROADMAP.md](./MVP_ROADMAP.md) for detailed MVP timeline.
 
-### 🚧 Phase 1: MVP (Weeks 1-3)
+### 🏗️ Phase 1: MVP (Weeks 1-3)
 - [ ] Python parser integration (RustPython)
 - [ ] Symbol table and scope resolution
 - [ ] Basic type system (primitives, functions)
@@ -332,21 +332,16 @@ Please see our full [ROADMAP.md](./ROADMAP.md) for details on planned features.
 
 ## 🚦 Current Status
 
-**🟡 Phase 0: Foundation (In Progress)**
+**🟡 Phase 1: Parser & AST (In Progress)**
 
 Setting up the project structure and development environment.
 
 **Completed:**
-- ✅ Project planning and documentation
-- ✅ Roadmap and architecture design
-- ✅ Implementation guide
-- ✅ README and project structure
+- ✅ Parser Integration
 
 **Next Steps:**
-- ⏳ Cargo project initialization
-- ⏳ Development tooling setup
-- ⏳ Basic error types
-- ⏳ CLI skeleton
+- ⏳ Symbol Table
+- ⏳ Type System Foundation
 
 **Timeline:** MVP targeted for completion in 2-3 weeks.
 

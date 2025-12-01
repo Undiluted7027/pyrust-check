@@ -10,7 +10,7 @@ This document outlines pyrust-check's development roadmap from MVP through advan
 
 | Phase | Focus | Timeline | Status |
 |-------|-------|----------|--------|
-| **Phase 1: MVP** | Core type checking | Weeks 1-3 | 🏗️ 3% Complete |
+| **Phase 1: MVP** | Core type checking | Weeks 1-3 | 🏗️ 21% Complete |
 | **Phase 2: Classes & Inheritance** | OOP support | Weeks 4-7 | 📋 Planned |
 | **Phase 3: Advanced Types** | Generics, unions, protocols | Weeks 8-12 | 📋 Planned |
 | **Phase 4: The Differentiator** | Complex inheritance solution | Weeks 13-17 | 🔮 Future |
@@ -22,7 +22,9 @@ This document outlines pyrust-check's development roadmap from MVP through advan
 ## Phase 1: MVP 🏗️
 
 **Timeline**: Weeks 1-3
-**Status**: 3% Complete (Phase 0 in progress)
+
+**Status**: 21% Complete (Phase 1 in progress)
+
 **Goal**: Working CLI type checker for basic Python
 
 See [MVP_ROADMAP.md](./MVP_ROADMAP.md) for detailed breakdown.
@@ -37,7 +39,7 @@ See [MVP_ROADMAP.md](./MVP_ROADMAP.md) for detailed breakdown.
 
 **Completion Target**: End of Week 3
 
-**Current Status**: Phase 0 (Foundation) in progress
+**Current Status**: 1 (MVP) in progress
 
 ### MVP Known Limitations
 
