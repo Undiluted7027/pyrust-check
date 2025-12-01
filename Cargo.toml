@@ -1,0 +1,7 @@
+# Main package manifest
+[package]
+name = "pyrust-check"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
